@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan Tugas 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header AWAL -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#saya">Saya</a>
+                </li>
+                <li>
+                    <a href="#pendidikan">Pendidikan</a>
+                </li>
+                <li>
+                    <a href="#pengalaman">Pengalaman</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="slide-container">
+
+                <!-- BANNER GAMBAR SLIDE -->
+                <div class="slide fade">
+                    <img class="featured-image" src="assets/image/banner2.jpg" alt="portofolio" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img class="featured-image" src="assets/image/banner3.jpg" alt="portofolio" style="width:100%">
+                </div>
+
+                <!-- Tombol kanan kiri foto -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div id="content">
+            <article id="saya" class="box">
+                <h1>Tentang Saya</h1>
+                <div id="saya2">
+                    <img src="assets/image/foto.png" alt="foto saya" class="image-new-saya" width="300">
+                    <p>
+                        Sebagai lulusan S1 Universitas Negeri Malang jurusan Ilmu Kesehatan Masyarakat yang memiliki minat dengan Health, Safety, and Environtment. Pengalaman pelatihan Ahli K3 Umum, Internship dan menekuni peminatan Keselamatan dan Kesehatan Kerja pada masa kuliah menjadikan saya paham dan terbiasa untuk melakukan identifikasi bahaya, pembuatan laporan JSA dan HIRADC, pembuatan CSMS, dan mampu membuat media promosi untuk Keselamatan dan Kesehatan Kerja (K3). Memiliki kemampuan komunikasi, analisis yang kuat, Microsoft Office, dan memiliki ketertarikan di bidang teknologi. Saya sedang mencari peluang di bidang Health, Safety, Environtment. Saya terus berkomitmen dan termotivasi untuk terus berdikusi, belajar, sekaligus memberikan kontribusi yang lebih baik kepada lingkungan kerja.
+                    </p>
+                </div>
+            </article>
+
+            <article id="pendidikan" class="box">
+                <h1>Pendidikan</h1>
+                <div id="pendidikan1">
+                    <img src="assets/image/um.jpeg" alt="universitas-negeri-malang" class="image-new" width="300">
+                    <p>
+                        Sebagai lulusan S1 Universitas Negeri Malang jurusan Ilmu Kesehatan Masyarakat yang memiliki minat dengan Health, Safety, and Environtment. Pengalaman pelatihan Ahli K3 Umum, Internship dan menekuni peminatan Keselamatan dan Kesehatan Kerja pada masa kuliah menjadikan saya paham dan terbiasa untuk melakukan identifikasi bahaya, pembuatan laporan JSA dan HIRADC, pembuatan CSMS, dan mampu membuat media promosi untuk Keselamatan dan Kesehatan Kerja (K3).
+                    </p>
+                </div>
+            </article>
+
+            <article id="pengalaman" class="box">
+                <h1>Pengalaman</h1>
+                <div id="pengalaman1">
+                    <img src="assets/image/magang.jpg" alt="foto-tempat-magang" width="300">
+                    <p>
+                        Magang di pembangkit listrik sebagai HSE intern sangat berharga bagi perkembangan profesional saya. Pengalaman ini tidak hanya memberikan wawasan mendalam tentang praktik keselamatan dan lingkungan, tetapi juga meningkatkan kemampuan saya dalam menghadapi tantangan di industri energi. Saya berkomitmen untuk menerapkan pengetahuan ini di masa depan dan berkontribusi pada keselamatan dan keberlanjutan di tempat kerja.
+                    </p>
+                </div>
+            </article>
+
+            <article id="contact">
+                <section>
+                    <div class="contact-text">
+                        <h2>Kontak</h2>
+                        <h4>HAI SALAM KENAL YA</h4>
+                        <p>Belajar pengembangan web tidak hanya membuka peluang karir yang luas, tetapi juga memberikan keterampilan berharga untuk membangun proyek pribadi. Dengan banyaknya sumber daya online dan komunitas, siapa pun dapat memulai perjalanan ini dengan semangat dan rasa ingin tahu!</p>
+                        <ul class="contact-list">
+                            <li><i class="bx bxs-send"></i>charmenderest@gmail.com</li>
+                            <li><i class="bx bxs-phone"></i> 0819xxxxxxxxxx</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <form action="">
+                            <input type="text" placeholder="Masukan Nama" required>
+                            <input type="email" placeholder="Masukan Email" required>
+                            <input type="text" placeholder="Masukan Subjek">
+                            <textarea placeholder="Pesan" required></textarea>
+                            <input type="submit" value="Kirim" class="send">
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+        <!-- KONTEN SAMPING ASIDE -->
+
+        <aside>
+            <article class="profil">
+                <header>
+                    <h2>Faaiq Sean</h2>
+                    <p>Sedang Belajar</p>
+                    <figure>
+                        <img src="assets/image/foto.png" alt="foto-saya" width="150">
+                        <figcaption>foto diri saya</figcaption>
+                    </figure>
+                </header>
+
+                <section>
+                    <h3>Tentang Saya</h3>
+                    <table>
+                    <tr>
+                        <th>Nama</th>
+                        <td>Faaiq Sean</td>
+                    </tr>
+                    <tr>
+                        <th>Umur</th>
+                        <td>22 Tahun</td>
+                    </tr>
+                    <tr>
+                        <th>Hobi</th>
+                        <td>Belajar</td>
+                    </tr>
+                    <tr>
+                        <th>Bahasa</th>
+                        <td>Jawa</td>
+                    </tr>
+                    <tr>
+                        <th>Makanan Kesukaan</th>
+                        <td>Nasi Goreng</td>
+                    </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <!-- FOOTER BAWAH -->
+    <footer>
+        <p>Tugas 1  &#169; 2024, Faaiq Sean</p>
+    </footer>
+
+    <script src="java_script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: #D3EE98
+}
+
+.navbar {
+    background-color: #72bf78aa;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    padding-inline: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #eeeeee;
+}
+
+nav a:hover {
+    font-size: 16px;
+    font-weight: 700;
+    color: #E85C0D;
+    background-color: #FEFF9F;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.15s ease-in-out;
+}
+
+.slide-container {
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 1.25rem;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(42, 42, 42, 0.795);
+    backdrop-filter: blur(5px);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 2rem;
+}
+
+#saya2, #pendidikan1, #pengalaman1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #73EC8B;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#pendidikan1 img, #saya img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+#pengalaman1 img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+#pendidikan1 p, #pengalaman1 p {
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+#contact{
+    display: flex;
+    grid-template-columns: auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #73EC8B;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact-text h2{
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(29, 1, 1);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact-text p{
+    color: rgb(27, 1, 1);
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-list{
+    margin-bottom: 3rem;
+}
+
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form form input, .contact-form form textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    background: #A0D683;
+    color: #877878;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+aside {
+    flex: 1;
+}
+
+.profil {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: #73EC8B;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.profil header {
+    text-align: center;
+    margin-left: -5px;
+}
+
+.profil section h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.profil section table th {
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #40A578;
+    text-align: center;
+    font-weight: 500;
+    bottom: 0;
+}
+
+aside :hover {
+    box-shadow: 16px 16px 25px -1px rgba(0,0,0,0.75);
+}
+
+.box :hover {
+    box-shadow: 9px 7px 20px -11px rgba(13,13,13,1);
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next {font-size: 11px}
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
